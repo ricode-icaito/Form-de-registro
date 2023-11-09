@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tarea.15</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.png">
+  </head>
+  <body>
+
+  <h1>Formulario de registro-Mi web.</h1>
+  <section>
+  <form name="formulario" method="get" action = "email:rickydios27@gmail.com">
+
+  <h2>Datos personales:</h2>
+  <input type="text" name="nombre" maxlength="50" placeholder="escribe tu nombre"><br>
+
+  <input type="text" name="apellidos" maxlength="50" placeholder="escribe tus apellidos"><br>
+
+  <input type="text" name="edad" maxlength="50" placeholder="escribe tu edad" size="10"><br>
+
+  <h2>Rangos de edad:</h2>
+  <label>Edad: <input type="radio" name="edad" value="18">18 a 29 Años</label><br>
+  <label>Edad: <input type="radio" name="edad" value="30">30 a 39 Años</label><br> 
+  <label>Edad: <input type="radio" name="edad" value="40">40 a 50 Años</label>
+
+  <h2>Profesion:</h2>
+  <label for="listado">Listado: </label>
+  <select name="profesion" id="listado">
+  <option value="0">Arquitecto</option>
+  <option value="1">Licenciado</option>
+  <option value="2">Ingeniero</option>
+  <option value="3">Doctor</option>
+  <option value="4">Contador</option></select>
+
+  <h2>Sexo:</h2>
+  <label>Hombre: <input type="radio" name="sexo" value="hombre">H</label><br>
+  <label>Mujer: <input type="radio" name="sexo" value="mujer">M</label>
+
+  <h2>Correo electronico:</h2>
+  <input type="text" name="correo" placeholder="escribe tu correo"><br>
+  
+  <h2>Casillas de verficacion:</h2>
+  <p>Deseo recibir informacion sobre novedades y ofertas.</p>
+  <label><input name="verificacion" type="checkbox" checked>Si</label><br>
+
+  <p>Declaro haber leido y aceptado las condiciones generales del programa y la normativa sobre proteccion de datos.</p>
+  <label><input type="checkbox" name="terminos">Acepto los Terminos y Condiciones.</label><br>
+
+  <input class="boton" type="image" src="boton.png" width="200">
+
+  </form>
+  </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
